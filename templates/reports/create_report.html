@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Medical Report
+{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">
+                {% if is_edit %}Update Medical Report{% else %}Create Medical Report{% endif %}
+            </h2>
+        </div>
+
+        <div class="card-body">
+            <h4>Patient: {{ appointment.patient.name }}</h4>
+            <h5>Doctor: Dr. {{ appointment.doctor.name }}</h5>
+            <p class="text-muted mb-1">
+                Appointment: {{ appointment.appointment_date }} at {{ appointment.time_slot }}
+            </p>
+            <hr>
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.non_field_errors }}
+
+                {% for field in form %}
+                    <div class="mb-3">
+                        <label for="{{ field.id_for_label }}" class="form-label fw-semibold">
+                            {{ field.label }}
+                        </label>
+                        {{ field }}
+                        {% if field.help_text %}
+                            <div class="form-text">{{ field.help_text }}</div>
+                        {% endif %}
+                        {% for error in field.errors %}
+                            <div class="text-danger small">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+
+                <button type="submit" class="btn btn-success btn-lg">
+                    {% if is_edit %}Update Report{% else %}Save Report{% endif %}
+                </button>
+                <a href="{% url 'admin_dashboard' %}" class="btn btn-secondary btn-lg">
+                    Back to Dashboard
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+MEDICAL REPORT FEATURE - UPDATED PROJECT
+
+Changes included:
+1. Admin/staff can create a report for an appointment.
+2. Admin/staff can reopen and edit an existing report.
+3. Saving a report marks its appointment as COMPLETED.
+4. Patients can view reports only when the appointment's Patient record is linked
+   to their logged-in Django user.
+5. Admin/staff can view all reports.
+6. Patients and admin/staff can download a PDF report.
+7. Patient dashboard View Report button is connected.
+8. Admin dashboard button shows Create Report or View / Edit Report.
+
+Run locally:
+    pip install -r requirements.txt
+    python manage.py runserver
+
+No database migration is needed because the existing MedicalReport model is unchanged.
+
+IMPORTANT:
+- A patient's Patient.user field must point to that patient's login account for
+  patient-side report access. Appointments created through the booking view already
+  use the logged-in user's Patient record.
+- The PDF contains the information entered by staff. It does not generate a medical
+  diagnosis or prescription automatically.

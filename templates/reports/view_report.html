@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Medical Report
+{% endblock %}
+
+{% block content %}
+<div class="container py-5 mt-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-success text-white">
+            <h2 class="mb-0">Medical Report</h2>
+        </div>
+
+        <div class="card-body">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h5>Patient Details</h5>
+                    <p class="mb-1"><strong>Name:</strong> {{ appointment.patient.name }}</p>
+                    <p class="mb-1"><strong>Age:</strong> {{ appointment.patient.age }}</p>
+                    <p class="mb-1"><strong>Gender:</strong> {{ appointment.patient.gender }}</p>
+                    <p class="mb-1"><strong>Phone:</strong> {{ appointment.patient.phone|default:"Not provided" }}</p>
+                    <p class="mb-1"><strong>Email:</strong> {{ appointment.patient.email }}</p>
+                </div>
+                <div class="col-md-6">
+                    <h5>Appointment Details</h5>
+                    <p class="mb-1"><strong>Doctor:</strong> Dr. {{ appointment.doctor.name }}</p>
+                    <p class="mb-1"><strong>Department:</strong> {{ appointment.doctor.get_department_display }}</p>
+                    <p class="mb-1"><strong>Date:</strong> {{ appointment.appointment_date }}</p>
+                    <p class="mb-1"><strong>Time:</strong> {{ appointment.time_slot }}</p>
+                    <p class="mb-1"><strong>Report Date:</strong> {{ report.report_date|date:"d M Y, h:i A" }}</p>
+                </div>
+            </div>
+
+            <hr>
+
+            <h5>Diagnosis</h5>
+            <p class="text-break">{{ report.diagnosis|linebreaksbr }}</p>
+
+            <hr>
+            <h5>Prescription</h5>
+            <p class="text-break">{{ report.prescription|linebreaksbr }}</p>
+
+            <hr>
+            <h5>Medicines</h5>
+            <p class="text-break">{{ report.medicines|linebreaksbr }}</p>
+
+            <hr>
+            <h5>Doctor's Notes</h5>
+            <p class="text-break">{{ report.doctor_notes|default:"No additional notes"|linebreaksbr }}</p>
+
+            <hr>
+
+            <a href="{% url 'download_medical_report' appointment.id %}" class="btn btn-primary">
+                <i class="bi bi-file-earmark-pdf"></i> Download Medical Report PDF
+            </a>
+
+            {% if request.user.is_staff %}
+                <a href="{% url 'create_medical_report' appointment.id %}" class="btn btn-outline-primary">
+                    Edit Report
+                </a>
+                <a href="{% url 'admin_dashboard' %}" class="btn btn-secondary">
+                    Back to Admin Dashboard
+                </a>
+            {% else %}
+                <a href="{% url 'patient_dashboard' %}" class="btn btn-secondary">
+                    Back to Patient Dashboard
+                </a>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
