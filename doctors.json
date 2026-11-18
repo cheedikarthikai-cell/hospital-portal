@@ -1,0 +1,233 @@
+[
+{
+  "model": "appointments.doctor",
+  "pk": 1,
+  "fields": {
+    "name": "Rahul Sharma",
+    "profile_image": "doctors/default7.jpg",
+    "department": "CARDIO",
+    "specialization": "Interventional Cardiology",
+    "qualification": "MBBS, MD (Cardiology), DM Cardiology",
+    "experience": 12,
+    "consultation_fee": "800.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:00 AM - 05:00 PM",
+    "email": "rahul.sharma@hospital.com",
+    "phone": "9876543210",
+    "about": "Dr. Rahul Sharma is an experienced cardiologist specializing in heart disease diagnosis, angioplasty, hypertension management, preventive cardiology, and cardiac rehabilitation.",
+    "rating": "4.9",
+    "is_active": true,
+    "created_at": "2026-07-11T14:30:01.528Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 2,
+  "fields": {
+    "name": "Priya Reddy",
+    "profile_image": "doctors/default4.jpg",
+    "department": "PEDIA",
+    "specialization": "Child Healthcare & Neonatology",
+    "qualification": "MBBS, MD Pediatrics",
+    "experience": 9,
+    "consultation_fee": "600.00",
+    "available_days": "Mon - Sat",
+    "available_time": "10:00 AM - 06:00 PM",
+    "email": "priya.reddy@hospital.com",
+    "phone": "9876543211",
+    "about": "Expert pediatrician providing vaccination, newborn care, nutrition guidance, and treatment for childhood illnesses.",
+    "rating": "4.8",
+    "is_active": true,
+    "created_at": "2026-07-11T14:33:31.451Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 3,
+  "fields": {
+    "name": "Arjun Kumar",
+    "profile_image": "doctors/default6.jpg",
+    "department": "ORTHO",
+    "specialization": "Joint Replacement Surgery",
+    "qualification": "MBBS, MS Orthopedics",
+    "experience": 15,
+    "consultation_fee": "950.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:30 AM - 04:30 PM",
+    "email": "arjun.kumar@hospital.com",
+    "phone": "9876543212",
+    "about": "Specialist in knee replacement, hip replacement, fractures, sports injuries, and orthopedic trauma management.",
+    "rating": "4.9",
+    "is_active": true,
+    "created_at": "2026-07-11T14:36:20.685Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 4,
+  "fields": {
+    "name": "Sneha Patel",
+    "profile_image": "doctors/default5.jpg",
+    "department": "NEURO",
+    "specialization": "Brain & Spine Disorders",
+    "qualification": "MBBS, MD Neurology, DM Neurology",
+    "experience": 14,
+    "consultation_fee": "1200.00",
+    "available_days": "Tue - Sat",
+    "available_time": "10:00 AM - 05:00 PM",
+    "email": "sneha.patel@hospital.com",
+    "phone": "9876543213",
+    "about": "Expert neurologist treating stroke, epilepsy, migraines, Parkinson's disease, and spinal disorders.",
+    "rating": "5.0",
+    "is_active": true,
+    "created_at": "2026-07-11T14:37:40.664Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 5,
+  "fields": {
+    "name": "Vikram Singh",
+    "profile_image": "doctors/default11.jpg",
+    "department": "CARDIO",
+    "specialization": "Heart Failure Specialist",
+    "qualification": "MBBS, MD Cardiology",
+    "experience": 11,
+    "consultation_fee": "850.00",
+    "available_days": "Mon - Sat",
+    "available_time": "08:30 AM - 03:30 PM",
+    "email": "vikram.singh@hospital.com",
+    "phone": "9876543214",
+    "about": "Provides advanced treatment for heart failure, hypertension, arrhythmias, and preventive cardiac care.",
+    "rating": "4.7",
+    "is_active": true,
+    "created_at": "2026-07-11T14:39:24.111Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 6,
+  "fields": {
+    "name": "Kavya Nair",
+    "profile_image": "doctors/default2_r1DO0de.jpg",
+    "department": "PEDIA",
+    "specialization": "Pediatric Nutrition",
+    "qualification": "MBBS, DCH, MD Pediatrics",
+    "experience": 8,
+    "consultation_fee": "650.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:00 AM - 03:00 PM",
+    "email": "kavya.nair@hospital.com",
+    "phone": "9876543215",
+    "about": "Focuses on child nutrition, developmental disorders, vaccinations, and preventive pediatric healthcare.",
+    "rating": "4.8",
+    "is_active": true,
+    "created_at": "2026-07-11T14:40:29.539Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 7,
+  "fields": {
+    "name": "Sanjay Verma",
+    "profile_image": "doctors/default10.jpg",
+    "department": "ORTHO",
+    "specialization": "Sports Injury Specialist",
+    "qualification": "MBBS, MS Orthopedics",
+    "experience": 13,
+    "consultation_fee": "900.00",
+    "available_days": "Mon - Sat",
+    "available_time": "11:00 AM - 06:00 PM",
+    "email": "sanjay.verma@hospital.com",
+    "phone": "9876543216",
+    "about": "Treats ligament injuries, fractures, arthritis, shoulder injuries, and sports rehabilitation.",
+    "rating": "4.8",
+    "is_active": true,
+    "created_at": "2026-07-11T14:42:36.926Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 8,
+  "fields": {
+    "name": "Neha Joshi",
+    "profile_image": "doctors/default3.jpg",
+    "department": "NEURO",
+    "specialization": "Neurophysiology",
+    "qualification": "MBBS, DM Neurology",
+    "experience": 10,
+    "consultation_fee": "1100.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:00 AM - 04:00 PM",
+    "email": "neha.joshi@hospital.com",
+    "phone": "9876543217",
+    "about": "Specializes in neurological disorders, epilepsy diagnosis, nerve conduction studies, and headache management.",
+    "rating": "4.9",
+    "is_active": true,
+    "created_at": "2026-07-11T14:44:07.063Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 9,
+  "fields": {
+    "name": "Ramesh Gupta",
+    "profile_image": "doctors/default9.jpg",
+    "department": "CARDIO",
+    "specialization": "Preventive Cardiology",
+    "qualification": "MBBS, MD Cardiology",
+    "experience": 18,
+    "consultation_fee": "1000.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:00 AM - 05:00 PM",
+    "email": "ramesh.gupta@hospital.com",
+    "phone": "9876543218",
+    "about": "Senior cardiologist with expertise in ECG, angiography, cholesterol management, and preventive heart care.",
+    "rating": "5.0",
+    "is_active": true,
+    "created_at": "2026-07-11T14:45:05.235Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 10,
+  "fields": {
+    "name": "Ananya Rao",
+    "profile_image": "doctors/default1.jpg",
+    "department": "PEDIA",
+    "specialization": "Pediatric Infectious Diseases",
+    "qualification": "MBBS, MD Pediatrics",
+    "experience": 7,
+    "consultation_fee": "700.00",
+    "available_days": "Tue - Sun",
+    "available_time": "10:00 AM - 06:00 PM",
+    "email": "ananya.rao@hospital.com",
+    "phone": "9876543219",
+    "about": "Experienced in treating childhood infections, immunization programs, fever management, and preventive pediatric medicine.",
+    "rating": "4.8",
+    "is_active": true,
+    "created_at": "2026-07-11T14:46:20.432Z"
+  }
+},
+{
+  "model": "appointments.doctor",
+  "pk": 11,
+  "fields": {
+    "name": "Karthik Cheedi",
+    "profile_image": "doctors/default8.jpg",
+    "department": "ORTHO",
+    "specialization": "Joint Replacement Surgery",
+    "qualification": "MBBS, MS Orthopedics",
+    "experience": 5,
+    "consultation_fee": "750.00",
+    "available_days": "Mon - Fri",
+    "available_time": "09:00 AM - 05:00 PM",
+    "email": "cheedikarthik.hospital@gmail.com",
+    "phone": "9876543220",
+    "about": "surgery specilaist for the join replacement, best practice at the malborne",
+    "rating": "5.0",
+    "is_active": true,
+    "created_at": "2026-07-11T14:48:55.071Z"
+  }
+}
+]
